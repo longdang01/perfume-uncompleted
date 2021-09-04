@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <ul class="breadcrumbs">
+            <li class="breadcrumbs-item"><a href="../html/admin.html" class="breadcrumbs-link">Admin</a></li>
+            <li class="breadcrumbs-item"><a href="#" class="breadcrumbs-link breadcrumbs-link-active">Add Product</a></li>
+        </ul>
+
+        <div class="content">
+            <h3 class="title">Basic Information</h3>
+            <form action="#">
+                <div class="content-info">
+                    <div class="input">
+                        <label for="#">Image</label>
+                        <input type="file" placeholder="Enter Product Name">
+                    </div>
+
+                    <div class="input">
+                        <label for="#">Product Name</label>
+                        <input type="text" placeholder="Enter Product Name">
+                    </div>
+    
+                    <div class="input">
+                        <label for="#">Product Code</label>
+                        <input type="text" placeholder="Enter Product Code">
+                    </div>
+    
+                    <div class="input">
+                        <label for="#">Quantity</label>
+                        <input type="text" placeholder="Enter Quantity">
+                    </div>
+    
+                    <div class="input">
+                        <label for="#">Price</label>
+                        <input type="text" placeholder="Enter Price">
+                    </div>
+    
+                    <div class="input">
+                        <label for="#">Inventory</label>
+                        <select class="selected">
+    
+                            <option value="all">All</option>
+                            <option value="instock">In stock</option>
+                            <option value="outstock">Out of stock</option>
+                            <option value="limited">Limited</option>
+                        </select>
+                    </div>
+    
+                    <div class="input">
+                        <label for="#">Categories</label>
+                        <select class="selected">
+                            <option value="all">All</option>
+                            <option value="chanel">Chanel</option>
+                            <option value="dior">Dior</option>
+                            <option value="gucci">Gucci</option>
+                        </select>
+                    </div>
+    
+                </div>
+                
+                <div class="input">
+                    <label for="#">Description</label>
+                    <textarea name="description"></textarea>
+                </div>
+                
+                <button type="submit" class="btn-plus">Add</button>
+                <button class="btn-cancel">Cancel</button>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script src="../js/admin.js"></script>
+    <script>
+        CKEDITOR.replace('description');
+    </script>
+</body>
+</html>

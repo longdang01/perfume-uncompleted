@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h3 class="title">
+            <span>Products</span>
+            <a href="../html/product.html" class="btn-add">Add to Product</a>
+        </h3>
+
+        <div class="products container">
+            <h3 class="sub-title">
+                <span>Product List</span>
+                
+                <div class="search">
+                    <input id="inputSearch" type="text" placeholder="Search Products">
+                    <!-- <a href="#" class="btn-search">
+                        <i class="fas fa-search"></i>
+                    </a> -->
+                </div>
+
+                <!-- <div>
+                    <a href="#" class="btn-sort">
+                        <span>Sort By Price</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul>
+                        <li><a href="#" class="sort-price">From Min to Max</a></li>
+                        <li><a href="#" class="sort-price">From Max to Min</a></li>
+                    </ul>
+                </div> -->
+            </h3>
+
+
+            <div class="product-list">
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th data-column="name" data-order="desc">Product Name</th>
+                            <th data-column="categories" data-order="desc">Category</th>
+                            <th data-column="price" data-order="desc">Price</th>
+                            <th data-column="quantity" data-order="desc">Quantity</th>
+                            <!-- <th data-column="inventory" data-order="desc">Inventory</th>
+                            <th data-column="action" data-order="desc">Actions</th> -->
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- <tr>
+                            <td>
+                                <div class="product-name">
+                                    <img src="../img/item-1.jpg">
+                                    <h5>Coco</h5>
+                                </div>
+                            </td>
+                            <td>Chanel</td>
+                            <td>$200</td>
+                            <td>8</td> -->
+                            <!-- <td>
+                                <span class="status">In stock</span>
+                            </td>
+                            <td>
+                                <div class="choice">
+                                    <a href="javascript:void(0)" class="btn-edit">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn-remove">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td> -->
+                        <!-- </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="product-name">
+                                    <img src="../img/item-2.jpg">
+                                    <h5>Dior</h5>
+                                </div>
+                            </td>
+                            <td>Dior</td>
+                            <td>$180</td>
+                            <td>2</td>
+                            <td>
+                                <span class="status">In stock</span>
+                            </td>
+                            <td>
+                                <div class="choice">
+                                    <a href="javascript:void(0)" class="btn-edit">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn-remove">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="product-name">
+                                    <img src="../img/item-3.jpg">
+                                    <h5>Gucci</h5>
+                                </div>
+                            </td>
+                            <td>Gucci</td>
+                            <td>$100</td>
+                            <td>20</td>
+                            <td>
+                                <span class="status">In stock</span>
+                            </td>
+                            <td>
+                                <div class="choice">
+                                    <a href="javascript:void(0)" class="btn-edit">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn-remove">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+    
+                        <tr>
+                            <td>
+                                <div class="product-name">
+                                    <img src="../img/item-4.jpg">
+                                    <h5>Coco</h5>
+                                </div>
+                            </td>
+                            <td>Chanel</td>
+                            <td>$599</td>
+                            <td>10</td>
+                            <td>
+                                <span class="status">In stock</span>
+                            </td>
+                            <td>
+                                <div class="choice">
+                                    <a href="javascript:void(0)" class="btn-edit">
+                                        <i class="far fa-edit"></i>
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn-remove">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                    
+            </div>
+
+
+        </div>
+        
+
+        <a href="/index.html">Back to website</a>
+    </div>
+
+
+
+
+
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

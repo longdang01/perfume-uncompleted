@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+i {
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.name input[type=text],
+.selected {
+    padding: .8rem 1rem;
+    outline: none;
+}
+
+.price input[type=text] {
+    outline: none;
+    padding: .8rem;
+    width: 60px;
+}
+
+.quantity input[type=text] {
+    outline: none;
+    padding: .8rem;
+}
+
+.product-name {
+    display: flex;
+    align-items: center;
+}
+
+.product-name img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.status {
+    position: relative;
+    color: #679b67;
+}
+
+.status::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #679b67;
+}
+
+.choice > i {
+    margin-right: 2rem;
+    cursor: pointer;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 2rem;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+    content: '/';
+    margin: 0 .5rem;
+}
+
+.breadcrumbs-link {
+    font-size: 1.4rem;
+    color: grey;
+}
+
+.breadcrumbs-link-active {
+    color: var(--primaryColor);
+}
+
+.content {
+    padding: 2rem;
+    background: #fff;
+}
+
+.title {
+    margin-bottom: 2rem;
+}
+
+.input input[type=text] {
+    width: 45rem;
+    padding: 1rem 2rem;
+    outline: none;
+}
+
+.input {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    color: #445fcf;
+    margin-bottom: 1rem;
+}
+
+.content-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.btn-plus,
+.btn-cancel {
+    display: inline-block;
+    margin-top: 2rem;
+    background: #445fcf;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.btn-cancel {
+    background: grey;
+}
